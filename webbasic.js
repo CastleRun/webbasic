@@ -10,7 +10,12 @@ function execute(script){
     y=x[j].split(" ");
     switch(y[0]){
       case "ECHO":
-        console.log(y[1]);
+        var str="";
+        for(var m=1; m<y.length; m++){
+          str.concat(y[m]);
+          str.concat(" ");
+        }
+        console.log(str);
         break;
       case "GOTO":
         j=parseInt(y[1]);
@@ -44,7 +49,11 @@ function execute(script){
               }
               switch(z[0]){
                       case "ECHO":
-                        console.log(z[1]);
+                        var st="";
+                        for(var n=1; n<y.length; n++){
+                          st.concat(z[n]);
+                          st.concat(" ");
+                        }
                         break;
                       case "GOTO":
                         j=parseInt(z[1]);
