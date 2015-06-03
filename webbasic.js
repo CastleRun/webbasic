@@ -57,6 +57,8 @@ function execute(script){
             
             }
         break;
+      case "'":
+        break;
       default:
         console.log("ERROR");
     }
